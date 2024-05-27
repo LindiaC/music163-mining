@@ -20,6 +20,21 @@
 支持直接通过url访问
 
 · 运行刚刚下载的`QCloudMusicApi-6.6.2-win64_msvc2019_64/bin/ApiServer.exe`
-· 参考[原Node.js版本API帮助文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)，使用方式完全一致，例如原文档中调用方法为`/song/detail?ids=347230`，则通过url访问`http://localhost:3000/song/detail?ids=347230`即可获得相同功能
+
+· 参考[原Node.js版本API帮助文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)，使用方式完全一致，例如原文档中调用方法为`/song/detail?ids=347230`，则通过url访问`http://localhost:3000/song/detail?ids=347230`即可获得相同功能4
+
+### 获取所有{歌手id，歌手姓名}
+
+相关文件：`getAllSinger.py`（参考了https://github.com/microw/Music_recommendation）
+
+本文件实现功能：获取所有华语男歌手、女歌手、组合的{id,姓名}，并写入csv
+
+```
+5538,汪苏泷
+3684,林俊杰
+2116,陈奕迅
+```
+
+
 
 
