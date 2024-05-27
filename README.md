@@ -25,7 +25,7 @@
 
 ### 获取所有{歌手id，歌手姓名}
 
-相关文件：`getAllSinger.py`（参考了https://github.com/microw/Music_recommendation）
+相关文件：`getAllSinger.py`（参考了https://github.com/microw/Music_recommendation ）
 
 本文件实现功能：获取所有华语男歌手、女歌手、组合的{id,姓名}，并写入csv
 
