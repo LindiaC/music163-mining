@@ -35,7 +35,7 @@
 2116,陈奕迅
 ```
 
-爬取结果（2024.05.27）已上传至`singer.csv `，共计约5700行
+爬取结果（2024.05.27）已上传至`singer.csv`，共计约5700行
 
 ### 获取（大部分）歌曲
 
@@ -55,7 +55,7 @@
 
 即`id::歌曲名::歌手名::热度`，此格式为几个数年前网易云音乐推荐系统项目所处理的歌曲信息格式，例如[netease-music-recommendation](https://github.com/feiyutalk/netease-music-recommendation)、[Music_recommendation](https://github.com/microw/Music_recommendation)等等。
 
-爬取结果（2024.05.27）已上传至`song.csv `，共计约260000行
+爬取结果（2024.05.27）已上传至`song.csv`，共计约260000行
 
 
 
