@@ -23,7 +23,7 @@
 
 · 参考[原Node.js版本API帮助文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)，使用方式完全一致，例如原文档中调用方法为`/song/detail?ids=347230`，则通过url访问`http://localhost:3000/song/detail?ids=347230`即可获得相同功能
 
-### 获取所有{歌手id，歌手姓名}
+### 获取所有歌手
 
 相关文件：`getAllSinger.py`（参考了https://github.com/microw/Music_recommendation ）
 
