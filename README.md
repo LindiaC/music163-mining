@@ -5,7 +5,9 @@
 
 部分数据可以直接通过解析网页元素获得
 
-需要使用API的部分，原Node.js版本API已停止维护（就是直接在网址后面加/api就可以访问的那个），详情请见 https://github.com/Binaryify/NeteaseCloudMusicApi，因此使用了[Qt的替代版本](https://github.com/s12mmm3/QCloudMusicApi)
+需要使用API的部分，原Node.js版本API已停止维护（就是直接在网址后面加/api就可以访问的那个），详情请见 https://github.com/Binaryify/NeteaseCloudMusicApi
+
+因此使用了[Qt的替代版本](https://github.com/s12mmm3/QCloudMusicApi)
 
 ### 安装Qt版本的API库
 
