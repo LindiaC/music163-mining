@@ -27,7 +27,7 @@
 
 相关文件：`getAllSinger.py`（参考了https://github.com/microw/Music_recommendation ）
 
-本文件实现功能：获取所有华语男歌手、女歌手、组合的{id,姓名}，并在当前目录下新建singer.csv记录。其他地区只需要修改相应参数即可。
+本文件实现功能：获取所有华语男歌手、女歌手、组合的{id,姓名}，写入当前目录下的`singer.csv`。其他地区只需要修改相应参数即可。
 
 ```
 5538,汪苏泷
@@ -45,7 +45,7 @@
 
 相关API：`/artists?id=`
 
-本文件实现功能：使用`requests`直接获取访问url获得的json数据并提取有用的字段，整理成如下格式：
+本文件实现功能：读取当前目录下`singer.csv`，对于每一行的歌手id与API接口组合为url，使用`requests`直接获取访问url获得的json数据并提取有用的字段，整理成如下格式，写入当前目录下的`song.csv`：
 
 ```
 1908049566::算了吧::Aioz::100
