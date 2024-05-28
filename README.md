@@ -86,3 +86,19 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 
 处理结果已上传至`songlist.csv`
 
+#### 按歌单列举歌曲
+
+相关文件：`Songlist2Songs.py`
+
+相关API：`/playlist/detail?id=`，`/song/detail?id=`
+
+本文件实现功能：读取当前目录下指定csv（以`MusicList_2024-05-28T02-23-05.csv`为例），对于每一行的歌单id与API接口组合为url，获取到歌单下歌曲id，再将歌曲id与API接口组合为url，提取有用字段整理成如下格式，写入当前目录下的`songlist2songs.txt`：
+
+```
+欧美R&B入坑曲：封神旋律 是谁的一代青春##欧美 R&B/Soul 90后 ##10009377589##78	2772113::I wanted you::Ina Wroldsen::100	5100462::Dilemma::Nelly|Kelly Rowland::100	28718313::The Way I Still Love You::Reynard Silva::100	518904648::Paris in the Rain::Lauv::100	1786865::Because Of You::Ne-Yo::100	1571835::Call You Tonight::Johnta Austin::100	461544117::Starboy::The Weeknd|Daft Punk::100	29133008::Before You Break My Heart::Stevie Hoang::100	479223413::I Like Me Better::Lauv::100	29412405::In The Shadow Of The Sun::Professor Green::100	18513043::Love you like I do::Jamillions::100	431610014::Starboy::The Weeknd|Daft Punk::100	1830419924::Peaches::Justin Bieber|Daniel Caesar|Giveon::100	17793578::Be On You::Flo Rida|Ne-Yo::100	2051548110::Nothin' on Me::Leah Marie Perez::100	1934649::Shape Of My Heart::Sting::100	1955978156::Shut up My Moms Calling::Hotel Ugly::100	1420972635::Come Around Me::Justin Bieber::100	544199008::Done for Me (feat. Kehlani)::Charlie Puth|Kehlani::100	1985237093::24 Hours::Anthony Russo::100	1320329379::Talk Dirty::Jason Derulo::100	1786869::So Sick::Ne-Yo::100	19827042::Call You Tonight::Whitney Houston::100	1909814194::Every summertime::Jerry1::100	37955047::BLUE::Troye Sivan|Alex Hope::100	29758362::Trouble I'm In::Twinbed::100	1928397447::sun and moon::Anees::100	1318733599::Sunflower::Post Malone|Swae Lee::100	442867526::Die For You::The Weeknd::100	1369602061::double take::Dhruv::100	26643898::Billie Jean (Extended)::Michael Jackson::100	1774229::The One::Matt Cab::95	2058139099::One Of The Girls::The Weeknd|JENNIE|Lily-Rose Depp::100	29950374::Shy::Jai Waetford::100	1325449675::i swear i'll never leave again::keshi::100	35301130::One Last Time::Ariana Grande::100
+```
+
+每行第一组为歌单信息，后续为歌单对应歌曲信息，格式同前文，一个歌单内每组信息之间用`\t`分隔。歌曲歌手数量大于1时，用`|`分隔。
+
+处理结果已上传至`songlist2songs.txt`
+
