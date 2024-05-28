@@ -53,9 +53,36 @@
 1849998058::22秒::Aioz::100
 ```
 
-即`id::歌曲名::歌手名::热度`，此格式为几个数年前网易云音乐推荐系统项目所处理的歌曲信息格式，例如[netease-music-recommendation](https://github.com/feiyutalk/netease-music-recommendation)、[Music_recommendation](https://github.com/microw/Music_recommendation)等等。
+即`歌手id::歌曲名::歌手名::热度`，此格式为几个数年前网易云音乐推荐系统项目所处理的歌曲信息格式，例如[netease-music-recommendation](https://github.com/feiyutalk/netease-music-recommendation)、[Music_recommendation](https://github.com/microw/Music_recommendation)等等。
 
 爬取结果（2024.05.27）已上传至`song.csv`，共计约260000行
 
+### 获取所有歌单
 
+相关文件夹：`wyyMusic`（参考了https://blog.csdn.net/qq_52181283/article/details/122277915 ， 有微小改动，请根据参考链接内教程步骤运行）
+
+结果格式：
+
+```
+AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOfSongs,SongListName,SongsListID,Url
+16286,445189786,78,1,2024-05-07,1,欧美 R&B/Soul 90后 ,36,欧美R&B入坑曲：封神旋律 是谁的一代青春,10009377589,https://music.163.com/playlist?id=10009377589
+```
+
+
+爬取结果（2024.05.28）已上传至`MusicList_2024-05-28T02-23-05.csv`，共计约600行
+
+接下来再重新保存为便于数据挖掘的格式。
+
+相关文件：`SonglistProcessor.py`
+
+本文件实现功能：读取当前目录下指定csv（以`MusicList_2024-05-28T02-23-05.csv`为例），提取有用字段写入当前目录下`songlist.csv`：
+
+```
+欧美R&B入坑曲：封神旋律 是谁的一代青春##欧美 R&B/Soul 90后 ##10009377589##78
+荒诞美学｜神秘诡谲°优雅与疯狂##欧美 另类/独立 兴奋 ##9355373057##1026
+```
+
+即`歌单名##标签##歌单id##收藏量`，此格式为几个数年前网易云音乐推荐系统项目所处理的歌曲信息格式，例如[netease-music-recommendation](https://github.com/feiyutalk/netease-music-recommendation)、[Music_recommendation](https://github.com/microw/Music_recommendation)等等。
+
+处理结果已上传至`songlist.csv`
 
