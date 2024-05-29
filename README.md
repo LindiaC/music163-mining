@@ -102,3 +102,8 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 
 处理结果已上传至`songlist2songs.txt`
 
+### 使用Music Recommend System 
+
+运行`Music Recommend System.ipynb`，可以查找和一个歌单(user)最接近的10个歌单(user)，以及不同算法的评估。
+
+基于user找歌的part没有看懂。
