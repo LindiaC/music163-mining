@@ -122,8 +122,5 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 
 运行效果视频如下：
 
-<video id="video" controls="" preload="none">
-      <source id="mp4" src="demo.mp4" type="video/mp4">
-</videos>
-
+![](demo.gif)
 
