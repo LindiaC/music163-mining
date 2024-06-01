@@ -118,9 +118,18 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 
 相关文件：`Music_Recommend_UI.py`
 
-直接clone仓库内所有内容可确保成功运行，如使用自己数据，请整理好类似的文件格式和结构，或者修改代码中相应路径部分
+使用tkinter编写UI，直接clone仓库内所有内容可确保成功运行。如使用自己数据，请整理好类似的文件格式和结构，或者修改代码中相应路径部分
 
 运行效果视频如下：
 
-<iframe src="demo.mp4" width="640" height="500" frameborder="0" allowfullscreen></iframe>
+<iframe 
+src="demo.mp4" 
+scrolling="no" 
+border="0" 
+frameborder="no" 
+framespacing="0" 
+allowfullscreen="true" 
+height=600 
+width=800> 
+</iframe>
 
