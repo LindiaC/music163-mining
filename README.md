@@ -122,7 +122,8 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 
 运行效果视频如下：
 
-<video src="demo.mp4" autoplay="true" controls="controls" width="600" height="600">
-</video>
+<video id="video" controls="" preload="none">
+      <source id="mp4" src="demo.mp4" type="video/mp4">
+</videos>
 
 
