@@ -122,7 +122,7 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 
 运行效果视频如下：
 
-<video src="https://github.com/LindiaC/music163-mining/blob/038ec765a08233935c4c465b3f77faebb41ab389/demo.mp4" autoplay="true" controls="controls" width="800" height="600">
+<video src="https://github.com/LindiaC/music163-mining/demo.mp4" autoplay="true" controls="controls" width="800" height="600">
 </video>
 
 
