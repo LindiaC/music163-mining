@@ -102,12 +102,28 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 
 处理结果已上传至`songlist2songs.txt`
 
+## 数据挖掘
+
+参考了[netease-music-recommendation](https://github.com/feiyutalk/netease-music-recommendation)、[Music_recommendation](https://github.com/microw/Music_recommendation)
+
 ### 使用Music Recommend System 
 
 运行`Music Recommend System.ipynb`，可以查找和一个歌单(user)最接近的10个歌单(user)，以及不同算法的评估。
 
-基于user找歌的part没有看懂。
-
 ### 根据若干首歌推荐相似的前10首歌
 
 运行`Music Recommend System.ipynb`，后面部分代码，结果存放于result.txt里。
+
+## 用户界面
+
+相关文件：`Music_Recommend_UI.py`
+
+使用tkinter编写UI，直接clone仓库内所有内容可确保成功运行。如使用自己数据，请整理好类似的文件格式和结构，或者修改代码中相应路径部分
+
+运行效果视频如下：
+
+<video id="video" controls="" preload="none">
+      <source id="mp4" src="demo.mp4" type="video/mp4">
+</videos>
+
+
