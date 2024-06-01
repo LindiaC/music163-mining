@@ -107,3 +107,7 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 运行`Music Recommend System.ipynb`，可以查找和一个歌单(user)最接近的10个歌单(user)，以及不同算法的评估。
 
 基于user找歌的part没有看懂。
+
+### 根据若干首歌推荐相似的前10首歌
+
+运行`Music Recommend System.ipynb`，后面部分代码，结果存放于result.txt里。
