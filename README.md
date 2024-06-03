@@ -1,6 +1,11 @@
 # music163-mining
 网易云音乐数据挖掘全家桶2024焕然一新版
 
+[@LindiaC](https://github.com/LindiaC) [@xp0123](https://github.com/xp0123)
+[@syy-yoyo](https://github.com/syy-yoyo)
+
+![](./image/graph.jpg)
+
 ## 数据获取
 
 部分数据可以直接通过解析网页元素获得
@@ -108,11 +113,25 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 
 ### 使用Music Recommend System 
 
-运行`Music Recommend System.ipynb`，可以查找和一个歌单(user)最接近的10个歌单(user)，以及不同算法的评估。
+运行`Music_Recommend_System.ipynb`。
 
-### 根据若干首歌推荐相似的前10首歌
+可以查找和一个歌单(user)最接近的10个歌单(user)，以及不同算法的评估；同时，也可以查找根据一个歌曲或多个歌曲推荐的10首歌。
 
-运行`Music Recommend System.ipynb`，后面部分代码，结果存放于result.txt里。
+#### 歌单->歌单
+使用Surprise推荐库自带的KNNBaseline算法实现。
+
+将歌曲作为 item，将播放列表作为 user，播放列表包含某歌曲即看作 user 给 item 打了一分（rating=1）。
+
+给出系统中一个歌单名称，可以推荐系统中最接近的10个歌单。
+
+#### 歌/歌单->歌
+使用Word2Vec模型进行训练，将歌单+歌抽象成文章+词。
+
+将**歌曲作为单词**，将**歌曲组成的播放列表作为句子**。
+
+给出系统中一个歌曲名称/或若干首歌曲名称，可以推荐系统中最接近的10首歌曲。
+
+
 
 ## 用户界面
 
@@ -122,5 +141,5 @@ AmountOfPlay,AuthorID,Collection,Comment,CreationDate,Forwarding,Labels,NumberOf
 
 运行效果视频如下：
 
-![](demo.gif)
+![](./image/demo.gif)
 
